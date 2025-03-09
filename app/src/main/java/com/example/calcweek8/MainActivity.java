@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             double secondNum = Double.parseDouble(secondNumStr);
 
             double result = firstNum + secondNum;
-            round(result);
+            String roundedResult = String.format("%.2f", result);
 
 
             textOutput.setText(String.valueOf(result));
